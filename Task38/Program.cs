@@ -39,4 +39,4 @@ int length = Convert.ToInt32(Console.ReadLine());
 
 double[] my_array = create_random_array(length);
 write_array(my_array);
-Console.WriteLine(difference_between_max_min(my_array));
+Console.Write($" Разница между максимальным и минимальным элементом -> {difference_between_max_min(my_array):F1}");
