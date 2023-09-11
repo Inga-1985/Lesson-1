@@ -44,14 +44,14 @@ for (int i = 0; i < matrixA.GetLength(0); i++)
 PrintMatrix(resultMatrix);
 
 
-// Функция для получения целочисленного ввода пользователя
+
 int ReadInt(string message)
 {
     Console.Write(message);
     return Convert.ToInt32(Console.ReadLine());
 }
 
-// Функция для заполнения матрицы рандомными значениями от 1 до 9
+
 void FillMatrixRandomly(int[,] matrix)
 {
     Random random = new Random();
@@ -64,7 +64,7 @@ void FillMatrixRandomly(int[,] matrix)
     }
 }
 
-// Функция для вывода двумерной матрицы в терминал
+
 void PrintMatrix(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
