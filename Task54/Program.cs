@@ -8,19 +8,22 @@
 // 9 5 3 2
 // 8 4 4 2
 
-void FillArrayRandom(int[,] array)
+
+Random random = new Random();
+
+void FillArrayWithRandomNumbers(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = new Random().Next(1, 10);
+            array[i, j] = random.Next(1, 10);
         }
     }
 }
 
 
-void SortDescending(int[,] array)
+void SortRowDescending(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -52,9 +55,11 @@ void PrintArray(int[,] array)
     }
 }
 
+
 int[,] table = new int[3, 4];
-FillArrayRandom(table);
+FillArrayWithRandomNumbers(table);
+Console.WriteLine("Исходный массив:");
 PrintArray(table);
-SortDescending(table);
-Console.WriteLine();
+SortRowDescending(table);
+Console.WriteLine("Упорядоченный массив:");
 PrintArray(table);
