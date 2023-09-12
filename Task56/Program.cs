@@ -7,10 +7,9 @@
 
 int[,] table = new int[4, 4];
 
-// Метод для нахождения строки с наименьшей суммой элементов 
 void FindRowWithMinSumElements(int[,] array)
 {
-    int minRow = int.MaxValue; // Инициализируем minRow максимальным значением
+    int minRow = int.MaxValue; 
     int minSumRow = 0;
     int sumRow = 0;
     
@@ -31,7 +30,7 @@ void FindRowWithMinSumElements(int[,] array)
     Console.Write($"{minSumRow + 1} строка с наименьшей суммой элементов");
 }
 
-// Метод для вывода двумерного массива
+
 void PrintArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
@@ -44,7 +43,7 @@ void PrintArray(int[,] array)
     }
 }
 
-// Метод для заполнения массива случайными числами от 1 до 9
+
 void FillArrayRandomly(int[,] array)
 {
     Random random = new Random();
@@ -58,7 +57,6 @@ void FillArrayRandomly(int[,] array)
     }
 }
 
-// Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 
 FillArrayRandom(table);
 PrintArray(table);
