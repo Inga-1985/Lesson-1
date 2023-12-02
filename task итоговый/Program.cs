@@ -17,7 +17,7 @@ static string[] FilterShortStrings(string[] array)
 {
     int count = 0;
     string[] shortStringsArray = new string[array.Length];
-    
+
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i].Length <= 3)
@@ -26,7 +26,7 @@ static string[] FilterShortStrings(string[] array)
             count++;
         }
     }
-    
+
     Array.Resize(ref shortStringsArray, count); // Уменьшаем размер массива до фактической длины.
     return shortStringsArray;
 }
